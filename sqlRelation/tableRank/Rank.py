@@ -2,7 +2,7 @@ import subprocess
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
-cat = subprocess.Popen(["hadoop", "fs", "-cat", "/user/hive/warehouse/dw_htlapidb.db/tmp_sql_relation_table_joins_for_tfidf/*"], stdout=subprocess.PIPE)
+cat = subprocess.Popen(["hadoop", "fs", "-cat", "/user/hive/warehouse/.../tmp_sql_relation_table_joins_for_tfidf/*"], stdout=subprocess.PIPE)
 rights = []
 lefts = []
 for line in cat.stdout:
